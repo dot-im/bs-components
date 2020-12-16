@@ -1,0 +1,25 @@
+
+{
+    "name": "dot-im/bs-components",
+    "description": "Laravel blade bootstrap components",
+    "keywords": ["Laravel", "bootstrap", "components"],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dotim\\BsComponents\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dotim\\BsComponents\\BsComponentsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
