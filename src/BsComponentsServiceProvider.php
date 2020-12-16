@@ -9,6 +9,7 @@ use Dotim\BsComponents\Components\Btn;
 use Dotim\BsComponents\Components\Card;
 use Dotim\BsComponents\Components\Form;
 use Dotim\BsComponents\Components\Input;
+use Dotim\BsComponents\Components\Select;
 use Illuminate\Support\ServiceProvider;
 
 class BsComponentsServiceProvider extends ServiceProvider
@@ -26,6 +27,7 @@ class BsComponentsServiceProvider extends ServiceProvider
         Card::class,
         Form::class,
         Input::class,
+        Select::class,
     ];
 
     /**

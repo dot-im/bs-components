@@ -154,7 +154,23 @@ inputs syntax
     </span>
 @enderror
 ```
+#### Select
+select syntax
 
+```blade
+{{-- Select with options --}}
+<x-bs-select :options="[
+    'val1' => 'val1',
+    'val2' => 'val2',
+    'val3' => 'val3',
+    'val4' => 'val4',
+]" selected="val4"/>
+
+{{-- Select with custom options --}}
+<x-bs-select>
+    <option value="one">1</option>
+</x-bs-select>
+```
 # Html Attributes
 
 All components can be add any html attribute like ``id``, ``class``, ``role`` like
