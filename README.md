@@ -77,3 +77,33 @@ Card syntax
   </x-slot>
 </x-bs-card>
 ```
+
+#### Btn
+Btn syntax
+
+```blade
+<x-bs-btn>
+  Default btn success
+</x-bs-btn>
+
+{{-- one line syntax --}}
+<x-bs-btn text="Default btn success" />
+
+{{-- btn type --}}
+<x-bs-btn text="Error" type="danger" />
+
+{{-- btn disabled --}}
+<x-bs-btn text="Default btn success" disabled />
+
+{{-- btn a links --}}
+<x-bs-btn text="link with href" href="home" />
+<x-bs-btn text="link with url" url="home" />
+<x-bs-btn text="link with route" route="home" />
+
+{{-- btn sizes --}}
+<x-bs-btn text="Small btn" size="sm" />
+<x-bs-btn text="Larg btn" size="lg" />
+
+{{-- btn translate text --}}
+<x-bs-btn trans="translate btn" />
+```
