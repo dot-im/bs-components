@@ -107,3 +107,18 @@ Btn syntax
 {{-- btn translate text --}}
 <x-bs-btn trans="translate btn" />
 ```
+
+# Html Attributes
+
+All components can be add any html attribute like ``id``, ``class``, ``role`` like
+
+```blade
+{{-- Alert with class attribute --}}
+<x-bs-alert class="custom alert" message="Alert message" />
+
+{{-- Alert with id attribute --}}
+<x-bs-alert id="my-alert" message="Alert message" />
+
+{{-- Alert with custom attribute --}}
+<x-bs-alert data-js="any thing" message="Alert message" />
+```
