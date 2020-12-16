@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 class Form extends Component
 {
     /**
-     * Create a new Card instance.
+     * Create a new Form instance.
      *
      * @return void
      */

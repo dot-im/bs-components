@@ -125,6 +125,35 @@ And support all laravel routes ``[GET, POST, PATCH, PUT, DELETE]``
 {{-- forum url action --}}
 <x-bs-form method="DELETE" url="/del-user"></x-bs-form>
 ```
+#### Inputs
+inputs syntax
+
+```blade
+{{-- Defult text input --}}
+<x-bs-input placeholder="Welcome"/>
+
+{{-- input type --}}
+<x-bs-input type="email" />
+
+{{-- input with label --}}
+<x-bs-input type="email" label="Please insert the email."/>
+
+{{-- input has old value --}}
+<x-bs-input name="username" has-old/>
+{{-- result is --}}
+<input type="text" name="username" value="{{ old('username') }}" >
+
+{{-- input has validation errors --}}
+<x-bs-input name="username" has-errors/>
+
+{{-- result is --}}
+<input type="text" name="username" class="form-control @error('username') is-invalid @enderror">
+@error('username')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+```
 
 # Html Attributes
 

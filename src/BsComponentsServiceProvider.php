@@ -8,6 +8,7 @@ use Dotim\BsComponents\Components\BreadcrumbItem;
 use Dotim\BsComponents\Components\Btn;
 use Dotim\BsComponents\Components\Card;
 use Dotim\BsComponents\Components\Form;
+use Dotim\BsComponents\Components\Input;
 use Illuminate\Support\ServiceProvider;
 
 class BsComponentsServiceProvider extends ServiceProvider
@@ -24,6 +25,7 @@ class BsComponentsServiceProvider extends ServiceProvider
         Btn::class,
         Card::class,
         Form::class,
+        Input::class,
     ];
 
     /**
