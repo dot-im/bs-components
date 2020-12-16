@@ -1,6 +1,8 @@
-# Laravel Bootstarp Components
+# Requirements
+* ``PHP >= 8.0.0``
+* ``laravel/framework >= 8.12``
 
-#### Installation
+# Installation
 via composer
 
 ```bash
