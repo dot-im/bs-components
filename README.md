@@ -110,6 +110,22 @@ Btn syntax
 <x-bs-btn trans="translate btn" />
 ```
 
+#### Forms
+Forms by default, it contains ``csrf``, ``method_field``, ``multipart/form-data``
+
+And support all laravel routes ``[GET, POST, PATCH, PUT, DELETE]``
+```blade
+<x-bs-form method="PATCH" action="/new-user">
+    {{-- form content --}}
+</x-bs-form>
+
+{{-- forum route action --}}
+<x-bs-form method="POST" route="register"></x-bs-form>
+
+{{-- forum url action --}}
+<x-bs-form method="DELETE" url="/del-user"></x-bs-form>
+```
+
 # Html Attributes
 
 All components can be add any html attribute like ``id``, ``class``, ``role`` like
