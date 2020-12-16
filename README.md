@@ -16,25 +16,40 @@ php artisan view:clear
 # Available Components
 
 #### Alert
-Alert syntax the default type is `alert-success`
+Alert syntax
 
 ```blade
-<x-bs-alert>
-  Alert message
-</x-bs-alert>
-```
+{{-- Default alert success --}}
+<x-bs-alert>Alert message</x-bs-alert>
 
-Alert one line syntax
-```blade
+{{-- Alert one line syntax --}}
 <x-bs-alert type="danger" message="Alert message" />
-```
 
-Alert translate message
-```blade
+{{-- Alert translate message --}}
 <x-bs-alert trans="Alert message" />
+
+{{-- Alert dismissible --}}
+<x-bs-alert message="Alert message" dismissible />
 ```
 
-Alert dismissible
+#### Breadcrumb
+Breadcrumb syntax
+
 ```blade
-<x-bs-alert message="Alert message" dismissible />
+<x-bs-breadcrumb>
+  {{-- Bredcrumb item with href --}}
+  <x-bs-breadcrumb-item text="home" href="/home" />
+  
+  {{-- Bredcrumb item with call url() function --}}
+  <x-bs-breadcrumb-item text="home" url="home" />
+  
+  {{-- Bredcrumb item with call route() function --}}
+  <x-bs-breadcrumb-item text="home" route="home" />
+  
+  {{-- Bredcrumb item with call trans() text function --}}
+  <x-bs-breadcrumb-item trans="home" />
+  
+  {{-- Bredcrumb item is active --}}
+  <x-bs-breadcrumb-item text="home" active />
+</x-bs-breadcrumb>
 ```
