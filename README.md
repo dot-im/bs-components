@@ -53,3 +53,27 @@ Breadcrumb syntax
   <x-bs-breadcrumb-item text="home" active />
 </x-bs-breadcrumb>
 ```
+
+#### Card
+Card syntax
+
+```blade
+<x-bs-card header="Card Header">
+  <h1>Card body</h1>
+</x-bs-card>
+
+{{-- Card with slots --}}
+<x-bs-card>
+  <x-slot name="header">
+    Card Header
+  </x-slot>
+  
+  <x-slot name="body">
+    Card body
+  </x-slot>
+  
+  <x-slot name="footer">
+    Card footer
+  </x-slot>
+</x-bs-card>
+```
